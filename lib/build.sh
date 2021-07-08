@@ -86,6 +86,13 @@ install_npm() {
   fi
 }
 
+install_node_gyp() {
+  info "Installing node-gyp..."
+  npm install --unsafe-perm -g node-gyp
+  info "Installing node-gyp-build..."
+  npm install --unsafe-perm -g node-gyp-build
+}
+
 install_yarn() {
   local dir="$1"
 

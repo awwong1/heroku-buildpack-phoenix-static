@@ -36,6 +36,7 @@ cleanup_cache
 download_node
 install_node
 install_npm
+install_node_gyp
 if [ -f "$assets_dir/yarn.lock" ]; then
   install_yarn "$heroku_dir/yarn"
 fi
